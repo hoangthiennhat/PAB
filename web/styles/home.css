@@ -1,0 +1,84 @@
+@import './core/nav.css';
+@import './common/reponsive.css';
+@import './common/reset.css';
+@import './common/variable.css';
+
+@import './core/footer.css';
+
+main {
+    max-width: var(--maxWidth);
+    margin: auto;
+}
+
+/* slide */
+.slide {
+    height: 500px;
+    position: relative;
+}
+.arrow-left,
+.arrow-right {
+    width: 48px;
+    line-height: 48px;
+    text-align: center;
+    cursor: pointer;
+    background-color: var(--bgFooterBottomColor);
+    position: absolute;
+    border-radius: 5px;
+    z-index: 100;
+    color: white;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.arrow-left {
+    left: -24px;
+}
+.arrow-right {
+    right: -24px;
+}
+
+.group-dot {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    z-index: 100;
+    display: flex;
+}
+.dot {
+    margin: 0 4px;
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    background-color: var(--silverLightColor);
+    border-radius: 50%;
+}
+
+.slide-content {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slide-1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    left: 0;
+    transition: 2s;
+}
+.slide-2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: pink;
+    left: 100%;
+    transition: 2s;
+}
+.slide-3 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: green;
+    left: 200%;
+    transition: 2s;
+}

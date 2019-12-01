@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+    <!-- font family -->
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text&display=swap" rel="stylesheet">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
+    <!-- css main -->
+    <link rel="stylesheet" href="./styles/home.css" />
+</head>
+
+<body>
+    <main>
+        <!-- open header -->
+        <header>
+            <div class="header-top">
+                <div class="group-social">
+                    <ul>
+                        <li>
+                            <a class="fab fa-twitter"></a>
+                        </li>
+                        <li>
+                            <a class="fab fa-facebook-f"></a>
+                        </li>
+                        <li>
+                            <a class="fas fa-heart"></a>
+                        </li>
+                        <li>
+                            <a class="fab fa-pinterest"></a>
+                        </li>
+                        <li>
+                            <a class="fab fa-instagram"></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="name-blog">
+                    <h1>CERAMAG</h1>
+                    <h4>Fashion blog</h4>
+                </div>
+
+                <div class="search" id="find" onclick="showInputSearch()">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+
+            <nav>
+                <ul>
+                    <li>
+                        <a>Home</a>
+                    </li>
+                    <li>
+                        <a>Home</a>
+                    </li>
+                    <li>
+                        <a>Home</a>
+                    </li>
+                    <li>
+                        <a>Home</a>
+                    </li>
+                    <li>
+                        <a>Home</a>
+                    </li>
+                    <li>
+                        <a>Home</a>
+                    </li>
+                    <li>
+                        <a>Home</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div id="modal-search">
+                <div>
+                    <i class="fas fa-times" onclick="closeSearch()"></i>
+                    <div>
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="enter keywords and search" />
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- close header -->
+
+        <!-- slide -->
+        <section class="slide">
+            <div class="arrow-left fas fa-arrow-left" onclick="moveSlideLeft()"></div>
+            <div class="arrow-right fas fa-arrow-right" onclick="moveSlideRight()"></div>
+            <div class="group-dot">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+            <div class="slide-content">
+                <div class="slide-1 slide-item " >
+
+                </div>
+                <div class="slide-2 slide-item">
+
+                </div>
+                <div class="slide-3 slide-item">
+
+                </div>
+            </div>
+        </section>
+
+        <!-- open subscribe newletter -->
+        <div class="subscribe-letter">
+
+        </div>
+        <!-- open footer -->
+        <div class="footer">
+            <div class="footer-top">
+                <div>
+
+                </div>
+                <div>
+
+                </div>
+                <div>
+
+                </div>
+            </div>
+            <footer>
+                <div>
+                    <ul>
+                        <li>
+                            <i class="fab fa-twitter"> </i><span>
+                                twitter
+                            </span>
+                        </li>
+                        <li>
+                            <i class="fab fa-facebook-f"></i>
+                            <span>
+                                facebook
+                            </span>
+                        </li>
+                        <li>
+                            <i class="fas fa-heart"> </i>
+                            <span>
+                                blogovin
+                            </span>
+                        </li>
+                        <li>
+                            <i class="fab fa-pinterest"></i>
+                            <span>
+                                pinterest
+                            </span>
+                        </li>
+                        <li>
+                            <i class="fab fa-instagram">
+                            </i>
+                            <span>
+                                instagram
+                            </span>
+                        </li>
+
+                    </ul>
+                    <p>
+                        Made by © Copyright 2017. All rights reserved.
+                    </p>
+                </div>
+            </footer>
+        </div>
+
+        <!-- close footer -->
+    </main>
+
+    <script src="./js/all.js">
+    
+    </script>
+</body>
+
+</html>

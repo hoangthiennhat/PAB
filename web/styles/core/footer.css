@@ -1,0 +1,23 @@
+.footer .footer-top {
+    display: flex;
+    justify-content: space-between;
+}   
+.footer-top div {
+    width: 30%;
+    height: 300px;
+    background-color: var(--silverColor);
+}
+footer ul {
+    display: flex;
+    justify-content: center;
+}
+footer {
+    margin: 40px;
+}
+footer ul li {
+    padding: 0 25px;
+}
+footer p {
+    margin-top: 30px;
+    text-align: center;
+}
