@@ -43,5 +43,4 @@ function moveSlideRight() {
             
         }
         i++;
-        console.log(i)
 }
