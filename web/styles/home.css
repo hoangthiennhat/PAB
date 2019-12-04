@@ -59,13 +59,16 @@ main {
     position: relative;
 }
 
-.slide-1 {
+.slide-item {
     position: absolute;
     width: 100%;
     height: 100%;
+    transition: 2s;
+}   
+
+.slide-1 {
     background-color: red;
     left: 0;
-    transition: 2s;
 }
 
 .lifestyle-travel {
@@ -118,17 +121,10 @@ main {
 }
 
 .slide-2 {
-    position: absolute;
-    width: 100%;
-    height: 100%;
     background-color: pink;
     left: 100%;
-    transition: 2s;
 }
 .slide-3 {
-    position: absolute;
-    width: 100%;
-    height: 100%;
     background-color: green;
     left: 200%;
     transition: 2s;
