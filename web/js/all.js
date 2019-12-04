@@ -18,29 +18,35 @@ function moveSlideRight() {
     // offsetLeft
     
     let allItem = document.querySelectorAll('.slide-item');
-        allItem[i].style.left = '-100%';
+    console.log(i)    
+    allItem[i].style.left = '-100%';
         if (i == 1) {
+            
+            // allItem[1].style.display = 'block';
+            // allItem[2].style.display = 'block';
             allItem[0].style.display = 'none';
-            allItem[1].style.display = 'block';
-            allItem[2].style.display = 'block';
-            allItem[0].style.left = '100%';
+            
             allItem[2].style.left = '0';
+            allItem[0].style.left = '100%';
+            allItem[0].style.display = 'block';
             
         } else if (i == 2) {
             
+            
+            // allItem[0].style.display = 'block';
+            // allItem[2].style.display = 'block';
             allItem[1].style.display = 'none';
-            allItem[0].style.display = 'block';
-            allItem[2].style.display = 'block';
             allItem[0].style.left = '0';
             allItem[1].style.left = '100%';
+            allItem[1].style.display = 'block';
             i = -1;
         } else {
-            allItem[0].style.display = 'block';
-            allItem[1].style.display = 'block';
-            allItem[2].style.display = 'block';
+            // allItem[0].style.display = 'block';
+            // allItem[1].style.display = 'block';
+            allItem[2].style.display = 'none';
             allItem[1].style.left = '0';
             allItem[2].style.left = '100%';
-            
+            allItem[2].style.display = 'block';
         }
         i++;
 }
