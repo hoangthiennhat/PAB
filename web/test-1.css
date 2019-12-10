@@ -1,0 +1,29 @@
+.ul-parent {
+    background-color: red;
+    position: relative;
+    display: flex;
+  }
+  .ul-parent>li {
+    padding: 10px 10px;
+  }
+  
+  .ul-parent li ul {
+    display: none;
+    position: absolute;
+    background-color: green;
+  }
+  .ul-parent li:hover ul {
+    display: block;
+    
+  }
+  .wrap-full {
+    background-color: blue;
+    display: none;
+    position: absolute;
+    width: 100%;
+    left :0;
+    top: 30px;
+  }
+  .contact:hover + .wrap-full {
+    display: block;
+  }
