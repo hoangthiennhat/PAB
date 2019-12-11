@@ -48,7 +48,9 @@ nav {
     border-top: 0.5px solid var(--silverLighColor);
     border-bottom: 0.1px solid var(--silverLighColor);
     background-color: white;
-    
+    position: sticky;
+    top: 0;
+    z-index: 150;
 }
 nav ul {
     

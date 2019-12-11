@@ -11,42 +11,39 @@ function closeSearch() {
     find.style.transform = 'scale(0)';
 }
 
-// slide
-let i = 0;
-let position = 0;
-function moveSlideRight() {
-    // offsetLeft
+
+// slide effect
+    let nextBtn = document.getElementById('nextBtn');
+    let prevBtn = document.getElementById('prevBtn');
+    let carousel = document.querySelector('.carousel-slide');
+    let item = document.querySelectorAll('.slide-item');
+    let counter = 0;
+        nextBtn.addEventListener('click', () => {
+            console.log(counter)
+            carousel.style.transition = 'transform 0.6s ease-in-out';
+            counter++;
+            carousel.style.transform = `translateX(-${counter * 20}%)`
     
-    let allItem = document.querySelectorAll('.slide-item');
-    console.log(i)    
-    allItem[i].style.left = '-100%';
-        if (i == 1) {
-            
-            // allItem[1].style.display = 'block';
-            // allItem[2].style.display = 'block';
-            allItem[0].style.display = 'none';
-            
-            allItem[2].style.left = '0';
-            allItem[0].style.left = '100%';
-            allItem[0].style.display = 'block';
-            
-        } else if (i == 2) {
-            
-            
-            // allItem[0].style.display = 'block';
-            // allItem[2].style.display = 'block';
-            allItem[1].style.display = 'none';
-            allItem[0].style.left = '0';
-            allItem[1].style.left = '100%';
-            allItem[1].style.display = 'block';
-            i = -1;
-        } else {
-            // allItem[0].style.display = 'block';
-            // allItem[1].style.display = 'block';
-            allItem[2].style.display = 'none';
-            allItem[1].style.left = '0';
-            allItem[2].style.left = '100%';
-            allItem[2].style.display = 'block';
+    });
+    prevBtn.addEventListener('click', () => {
+        
+        carousel.style.transition = 'transform 0.6s ease-in-out';
+        counter++;
+        carousel.style.transform = `translateX(${counter * 20}%)`
+        console.log(counter)
+});
+    carousel.addEventListener('transitionend', () => {
+        if (item[counter].id == 'last') {
+            carousel.style.transition = 'none';
+            counter = 0;
+            carousel.style.transform = `translateX(-${counter * 20}%)`
         }
-        i++;
-}
+
+        if (item[counter].id == 'first') {
+            carousel.style.transition = 'none';
+            counter = carousel.length - 1 ;
+            carousel.style.transform = `translateX(${counter * 20}%)`
+            console.log(counter)
+        }
+        
+    });
