@@ -1,0 +1,44 @@
+/* phan subscribe newletter  */
+
+div.subscribe-letter {
+    width:100%;
+    height:442px;
+    background-color:blue;
+    color:black;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.subscribe-letter p {
+    padding: 90px 0 20px 0;
+}
+
+.subscribe-letter h4 {
+    font-size:30px;
+    letter-spacing: 10px;
+    padding:0 0 60px 0;
+}
+
+.subscribe-letter h6 {
+    letter-spacing: 3px;
+    padding-bottom: 35px;
+}
+
+.your-email {
+    width:350px;
+    height:46px;
+    color:gray;
+    margin-right:25px;
+}
+
+.your-money {
+    width:177px;
+    height:46px;
+    color:white;
+    background: black;
+    border-radius:20px;
+    border:none;
+    font-size: 10px;
+    letter-spacing: 2px;
+    cursor: pointer;
+}

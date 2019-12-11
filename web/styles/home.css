@@ -4,7 +4,7 @@
 @import './common/variable.css';
 
 @import './core/footer.css';
-
+@import './core/subrise.css';
 main {
     max-width: var(--maxWidth);
     margin: auto;
@@ -143,7 +143,8 @@ main {
     transition: 2s;
 }
 
-/* phần articles */
+/*------ phần articles------------ */
+
 .lastest-articles {
     width:100%;
     height:auto;
@@ -167,11 +168,62 @@ main {
     background-image:url('./../img/pic3.jpg');
     background-size: auto;
     width:50%;
-    height:auto;
-    /* background-image: url(/flower.jpg);
-    background-position: center; */
+    height:522px;
+    overflow: hidden;
+    position: relative;
 }
 
+.left-img img {
+    width:100%;
+    height:522px;
+    cursor: pointer;
+}
+
+.wrap-i {
+    position: absolute;
+    top:40px;
+    right:40px;
+    display:flex;
+    flex-direction: column;
+    display:none;
+    cursor: pointer;
+}
+
+.wrap-i>div {
+    background-color:white;
+    width:40px;
+    height:40px;
+    position: relative;
+}
+
+.wrap-i div .fa-heart {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+
+.wrap-i div:nth-child(2) {
+    background-color:yellow;
+    width:40px;
+    height:40px;
+    position: relative;
+}
+
+.fa-staylinked {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+
+.articles:hover .wrap-i {
+    display:block;
+}
+
+.far,.fab:hover {
+    opacity: 0.5;
+}
 .right-introduce {
     width:50%;
     height:auto;
@@ -257,57 +309,16 @@ main {
     flex-direction: row-reverse;
 }
 
-
-
-/* phan subscribe newletter  */
-
-div.subscribe-letter {
-    width:100%;
-    height:442px;
-    background-color:blue;
-    color:black;
-    text-align: center;
-    box-sizing: border-box;
-}
-
-.subscribe-letter p {
-    padding: 90px 0 20px 0;
-}
-
-
-.subscribe-letter h4 {
-    font-size:30px;
-    letter-spacing: 10px;
-    padding:0 0 60px 0;
-}
-
-.subscribe-letter h6 {
-    letter-spacing: 3px;
-    padding-bottom: 35px;
-}
-
-.your-email {
-    width:350px;
-    height:46px;
-    color:gray;
-    margin-right:25px;
-}
-
-.your-money {
-    width:177px;
-    height:46px;
-    color:white;
-    background: black;
-    border-radius:20px;
-    border:none;
-    font-size: 10px;
-    letter-spacing: 2px;
-    cursor: pointer;
-}
-
 /* Phần footer */
 
 /* Footer top */
+
+.footer>p {
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: 900;
+    margin: 10px;
+}
 
 .footer-top {
     display:flex;
@@ -344,12 +355,79 @@ div.subscribe-letter {
     transition:1s
 }
 
-.picture:hover {
+.picture:hover img {
     opacity:1 ;
-    transform: scale(1.2);  
-    overflow: hidden;
+    transform: scale(1.2); 
+    transition: 1s; 
+    /* overflow: hidden; */
 }
 
 .picture:hover .fa-camera {
     display: block;
 }
+
+
+/* -----------nav-------- */
+
+.ul-parent {
+    position: relative;
+    z-index: 3;
+}
+
+.ul-child {
+    margin-top:10px;
+    display:none;
+    z-index: 3;
+    position: absolute;
+    border-top:3px solid black;
+    background-color: white;
+    width:200px;
+    height:400px;
+}
+
+.ul-child li {
+    margin:20px 10px ;
+}
+
+.ul-parent li:hover .ul-child {
+    display:block;
+}
+
+/* Fashion -------> */
+
+.wrap-none {
+    display:none;
+}
+
+.wrap-block {
+    display:flex;
+    height:auto;
+    border-top:3px solid black;
+    position: absolute;
+    left:0;
+    top:45px;
+    width:100%;
+    background-color:white;
+    text-align: center;
+    align-items: center;
+}
+
+.wrap-text {
+    width:25%;
+}
+
+.wrap-pic {
+    width:25%;
+    margin:10px;
+}
+
+.wrap-pic img {
+    width:150px;
+    height:150px;
+}
+
+.hover-test:hover+.wrap-none {
+    display:block;
+}
+
+
