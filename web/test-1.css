@@ -12,6 +12,7 @@
     position: absolute;
     background-color: green;
   }
+
   .ul-parent li:hover ul {
     display: block;
     
@@ -27,3 +28,21 @@
   .contact:hover + .wrap-full {
     display: block;
   }
+
+/* test nav */
+
+.test2-child {
+  display:none;
+}
+
+.test2 li:hover .test2-child {
+  display:block;
+}
+
+.test3-child {
+  display:none;
+}
+
+.test2-child li:hover .test3-child {
+  display:block;
+}

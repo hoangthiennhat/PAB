@@ -360,8 +360,11 @@ main {
 }
 
 .ul-child {
-    margin-top:10px;
-    display:none;
+    display:none;  
+}
+
+.div-child {
+    margin-top:-1px;
     z-index: 3;
     position: absolute;
     border-top:3px solid black;
@@ -411,7 +414,7 @@ main {
     height:150px;
 }
 
-.hover-test:hover+.wrap-none {
+.hover-test:hover .wrap-none {
     display:block;
 }
 
