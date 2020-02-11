@@ -9,6 +9,17 @@ main {
     max-width: var(--maxWidth);
     margin: auto;
 }
+/* Phan Nav */
+.group-social>ul {
+    margin:0;
+    padding:0;
+} 
+
+.group-social ul li ul {
+    display:none;
+} 
+
+
 
 /* slide */
 .slide {
@@ -380,8 +391,6 @@ main {
 .ul-parent li:hover .ul-child {
     display:block;
 }
-
-/* Fashion -------> */
 
 .wrap-none {
     display:none;

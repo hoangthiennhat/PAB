@@ -1,9 +1,10 @@
-@import './core/nav.css';
+
 @import './common/reponsive.css';
 @import './common/reset.css';
 @import './common/variable.css';
-@import './core/footer.css';
-@import './core/subrise.css';
+@import './subrise.css';
+@import './/footer.css';
+@import './/respon.css';
 /* main {
     max-width: var(--maxWidth);
     margin: auto;
@@ -29,10 +30,10 @@
     transform: translateY(-50%);
 }
 .arrow-left {
-    left: -24px;
+    left: -5px;
 }
 .arrow-right {
-    right: -24px;
+    right: 5px;
 }
 
 .group-dot {
@@ -469,7 +470,7 @@
 }
 .right-introduce {
     width:50%;
-    height:auto;
+    height:522px;
     background-color:red;
 }
 
@@ -738,15 +739,15 @@ section.up-footer {
 .lastest img {
     float: left;
     clear: both;
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
     margin-top:25px;
 }
 
 .lastest p:nth-child(2) {
     font-weight: 500;
     color:black;
-    padding-top: 55px;
+    padding-top: 25px;
     padding-left: 140px;
     font-size: 15px;
 }
@@ -754,7 +755,7 @@ section.up-footer {
 .lastest p:nth-child(3) {
     font-weight: 500;
     color:#C5C6C7;
-    padding-top: 30px;
+    padding-top: 19px;
     padding-left: 140px;
     font-size: 15px;
 }
@@ -776,7 +777,7 @@ section.up-footer {
 }
 
 .up-foot-hover img {
-    width:118px;
+    width:93px;
     transition: 0.8s;
 }
 
@@ -800,8 +801,8 @@ section.up-footer {
 }
 
 .find-follow-social {
-    display:flex;
-    justify-content: space-around;
+    /* display:flex;
+    justify-content: space-around; */
 }
 
 .find-follow-social ul {
@@ -809,12 +810,13 @@ section.up-footer {
     justify-content: space-around;
     margin-top:50px;
     margin-bottom: 25px;
+    padding:0;
 }
 
 .find-follow-social ul li {
     border: 1px solid #E5E5E5;
     cursor: pointer;
-    margin:9px;
+    margin:7px;
 }
 
 .find-follow-social ul li:hover a {
@@ -822,10 +824,10 @@ section.up-footer {
 }
 
 .find-follow-social ul li a {
-    width:50px;
-    height:50px;
+    width:40px;
+    height:40px;
     text-align: center;
-    line-height: 50px;
+    line-height: 40px;
 }
 
 .up-footer-search {
