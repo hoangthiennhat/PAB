@@ -1,0 +1,188 @@
+body {
+    margin:0;
+    padding:0;
+}
+
+nav {
+   display:flex;
+   background-color:#E9E6E7;
+   height:110px;
+   width:100%;  
+   position: relative;
+   margin:0;
+   padding:0;
+}
+
+nav .nav-left {
+    width:33%;
+    position: relative;
+    background-color:blue;
+}
+
+nav .nav-left img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: transparent;
+}
+
+nav .nav-left img:hover {
+    cursor: pointer;
+}
+
+nav .nav-right {
+    width:67%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav .nav-right ul,li {
+    margin:0;
+    padding:0;
+    list-style-type: none;
+}
+/* ---------- HOME,PAGE,SHORTCODE ----------- */
+nav .nav-right>ul {
+    padding: 26px 6px;
+    /* border: 1px solid red; */
+    margin: 0 8px;
+    cursor: pointer;
+}
+
+nav .nav-right .ul-parent .li-none ul.ul-child {
+    display:block;
+    position: absolute;
+    z-index: 3;
+    /* border:1px solid red; */
+    top: 90px;
+    left: 480px;
+    width: 200px;
+    border-top:4px solid black;
+    background-color: white;
+} 
+
+nav .nav-right .ul-parent .li-none ul.ul-child a {
+    text-decoration: none;
+    color:black;
+}
+
+nav .nav-right .ul-parent .li-none ul.ul-child a li:hover {
+    color:green;
+}
+
+nav .nav-right .ul-parent .li-none ul.ul-child li {
+    margin:15px;
+    text-indent: 25px;
+    cursor: default;
+}
+
+nav .nav-right .ul-parent li.li-none  {
+    display:none; 
+}
+
+nav .nav-right ul:hover li.li-none {
+    display:block;
+}
+/* ---------Page -------- */
+nav .nav-right .ul-parent .li-none ul.ul-child-page {
+    left: 700px;
+} 
+/* ----------SHORTCODE------ */
+nav .nav-right .ul-parent .li-none ul.ul-child-shortcode {
+    left: 775px;
+} 
+/* ----------END --HOME PAGE SHORTCODE-------- */
+
+/* -------- TRAVEL -------------- */
+
+nav .nav-right .ul-parent .li-none ul.ul-child-travel {
+    display:flex;
+    position: absolute;
+    z-index: 4;
+    /* border:1px solid red; */
+    top:90px;
+    left:0;
+    width: 100%;
+    border-top:4px solid black;
+    background-color: white;
+    cursor: default;
+} 
+
+.ul-child-travel .li-travel {
+    margin:25px 0 !important;
+    padding:0;
+    text-indent:0 !important;
+    width:25%;
+}
+
+.ul-child-travel .li-travel-2 {
+    border-right: 1px solid gray;
+    border-left: 1px solid gray;
+}
+
+.ul-child-travel .li-travel-3 {
+    border-right: 1px solid gray;
+}
+
+.li-travel div {
+    text-align: center;
+}
+
+.li-travel h3 {
+    text-align: center;
+}
+
+.ul-child-travel .li-travel p {
+    text-align: center;
+    text-indent: 0;
+}
+
+.ul-child-travel li h3:hover {
+    color:violet;
+}
+
+.ul-child-travel li .nav-text-2 {
+    color:#8188A5;
+    
+}
+
+.ul-child-travel li .nav-text-2:hover {
+    color:#8188A5;
+    opacity: 0.5;
+}
+
+/* -------END TRAVEL ---------------- */
+
+/* ----- Features , SHOP -------------- */
+
+.li-travel-2 h4 {
+    text-align: left;
+    text-indent: 70px;
+}
+
+.li-travel-2 h4:hover {
+    color:violet;
+    cursor: pointer;
+}
+
+.li-travel-2 p {
+    text-align: left;
+    text-indent: 70px;
+}
+
+.li-travel-2 p:hover {
+    color:violet;
+    cursor: pointer;
+}
+/* ---------END Features ---- */
+
+.im-camera {
+    display: block !important;
+    font-size: 16px !important;
+    position: relative !important;
+    top:0 !important;
+    left:0 !important;
+    transform: translate(0,0)!important;
+}
