@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,36 +10,51 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
     <link rel="stylesheet" href="./page2.css">
 </head>
+
 <body>
     <nav>
         <div class="nav-left">
-                <img src="./img/icon.png">
+            <img src="./img/icon.png">
         </div>
-        
-        <div class="nav-right">
-            <ul class="ul-parent">Home
-                <li class="li-none">
+        <div class="nav-hidden" onclick="showMenu()">
+            <p></p>
+            <p></p>
+            <p></p>
+        </div>
+        <ul class="nav-right" id="nav-right">
+            <li class="li-parent">Home
+                <div class="div-none">
                     <ul class="ul-child">
-                        <a href="#">
-                            <li>Orginal 1</li>
-                            <li>Orginal 2</li>
-                            <li>Orginal 3</li>
-                            <li>Orginal 4</li>
-                            <li>Orginal 5</li>
-                            <li>Orginal 6</li>
-                            <li>Orginal 7</li>
-                            <li>Orginal 8</li>  
-                            <li>Orginal 8</li>             
-                            <li>Orginal 8</li> 
-                            <li>Orginal 8</li> 
-                            <li>Orginal 8</li> 
-                        </a> 
+                        <li>
+                            <a href="#">Orginal 1</a>                          
+                        </li>
+                        <li>
+                            <a href="#">Orginal 2</a>                          
+                        </li>
+                        <li>
+                            <a href="#">Orginal 3</a>                          
+                        </li>
+                        <li>
+                            <a href="#">Orginal 4</a>                          
+                        </li>
+                        <li>
+                            <a href="#">Orginal 5</a>                          
+                        </li>
+                        <li>
+                            <a href="#">Orginal 6</a>                          
+                        </li>
+                        <li>
+                            <a href="#">Orginal 7</a>                          
+                        </li>
+                        <li>
+                            <a href="#">Orginal 8</a>                          
+                        </li> 
                     </ul>
-                </li>
-                
-            </ul>
-            <ul class="ul-parent">Travel
-                <li class="li-none">
+                </div>
+            </li>
+
+            <li class="li-parent">Travel
+                <div class="div-none">
                     <ul class="ul-child ul-child-travel">
                         <li class="li-travel">
                             <div>
@@ -49,7 +65,7 @@
                             </a>
                             <a href="#">
                                 <p class="nav-text-2">Any date</p>
-                            </a>                    
+                            </a>
                         </li>
                         <li class="li-travel li-travel-2">
                             <div>
@@ -60,7 +76,7 @@
                             </a>
                             <a href="#">
                                 <p class="nav-text-2">Any date</p>
-                            </a>                    
+                            </a>
                         </li>
                         <li class="li-travel li-travel-3">
                             <div>
@@ -71,7 +87,7 @@
                             </a>
                             <a href="#">
                                 <p class="nav-text-2">Any date</p>
-                            </a>                    
+                            </a>
                         </li>
                         <li class="li-travel">
                             <div>
@@ -82,193 +98,218 @@
                             </a>
                             <a href="#">
                                 <p class="nav-text-2">Any date</p>
-                            </a>                    
+                            </a>
                         </li>
                     </ul>
-                </li>               
-            </ul>
-            <ul class="ul-parent">Features
-                <li class="li-none">
+                </div>
+            </li>
+            <li class="li-parent">Features  
+                <div class="div-none">
                     <ul class="ul-child ul-child-travel">
                         <li class="li-travel li-travel-2">
-                            <h4>Column 1</h4>    
-                            <p>Row 1</p>      
-                            <p>Row 1</p>           
-                            <p>Row 1</p>  
-                            <p>Row 1</p>  
-                            <p>Row 1</p>  
-                            <p>Row 1</p>  
-                            <p>Row 1</p>  
-                            <p>Row 1</p>  
-                            <p>Row 1</p>  
-                            <p>Row 1</p>  
-                            <p>Row 1</p>  
+                            <h4>Column 1</h4>
+                            <p>Row 1</p>
+                            <p>Row 1</p>
+                            <p>Row 1</p>
+                            <p>Row 1</p>
+                            <p>Row 1</p>
+                            <p>Row 1</p>
+                            <p>Row 1</p>
+                            <p>Row 1</p>
+                            <p>Row 1</p>
+                            <p>Row 1</p>
+                            <p>Row 1</p> 
+                        </li>  
+                        <li class="li-travel li-travel-2">
+                            <h4>Column 2</h4>
+                            <p>Row 2</p>
+                            <p>Row 2</p>
+                            <p>Row 2</p>
+                            <p>Row 2</p>
+                            <p>Row 2</p>
+                            <p>Row 2</p>
+                            <p>Row 2</p>
+                            <p>Row 2</p>
+                            <p>Row 2</p>
+                            <p>Row 2</p>
+                            <p>Row 2</p> 
                         </li>
                         <li class="li-travel li-travel-2">
-                            <h4>Column 2</h4>    
-                            <p>Row 2</p>      
-                            <p>Row 2</p>           
-                            <p>Row 2</p>  
-                            <p>Row 2</p>  
-                            <p>Row 2</p>  
-                            <p>Row 2</p>  
-                            <p>Row 2</p>  
-                            <p>Row 2</p>  
-                            <p>Row 2</p>  
-                            <p>Row 2</p>  
-                            <p>Row 2</p>  
+                            <h4>Column 3</h4>
+                            <p>Row 3</p>
+                            <p>Row 3</p>
+                            <p>Row 3</p>
+                            <p>Row 3</p>
+                            <p>Row 3</p>
+                            <p>Row 3</p>
+                            <p>Row 3</p>
+                            <p>Row 3</p>
+                            <p>Row 3</p>
+                            <p>Row 3</p>
+                            <p>Row 3</p> 
                         </li>
                         <li class="li-travel li-travel-2">
-                            <h4>Column 3</h4>    
-                            <p>Row 3</p>      
-                            <p>Row 3</p>           
-                            <p>Row 3</p>  
-                            <p>Row 3</p>  
-                            <p>Row 3</p>  
-                            <p>Row 3</p>  
-                            <p>Row 3</p>  
-                            <p>Row 3</p>  
-                            <p>Row 3</p>  
-                            <p>Row 3</p>  
-                            <p>Row 3</p>  
-                        </li>
-                        <li class="li-travel li-travel-2">
-                            <h4>Column 4</h4>    
-                            <p>Row 4</p>      
-                            <p>Row 4</p>           
-                            <p>Row 4</p>  
-                            <p>Row 4</p>  
-                            <p>Row 4</p>  
-                            <p>Row 4</p>  
-                            <p>Row 4</p>  
-                            <p>Row 4</p>  
-                            <p>Row 4</p>  
-                            <p>Row 4</p>  
-                            <p>Row 4</p>  
-                        </li>
+                            <h4>Column 4</h4>
+                            <p>Row 4</p>
+                            <p>Row 4</p>
+                            <p>Row 4</p>
+                            <p>Row 4</p>
+                            <p>Row 4</p>
+                            <p>Row 4</p>
+                            <p>Row 4</p>
+                            <p>Row 4</p>
+                            <p>Row 4</p>
+                            <p>Row 4</p>
+                            <p>Row 4</p> 
+                        </li>                                     
                     </ul>
-                </li> 
-            </ul>
+                </div>
+            </li>
 
-            <ul class="ul-parent">Pages
-                <li class="li-none">
+            <li class="li-parent">Pages
+                <div class="div-none">
                     <ul class="ul-child ul-child-page">
-                        <a href="#">
-                            <li>Page 1</li>
-                            <li>Page 2</li>
-                            <li>Page 3</li>
-                            <li>Page 4</li>
-                            <li>Page 5</li>
-                            <li>Page 6</li>
-                            <li>Page 7</li>
-                            <li>Page 8</li>
-                        </a> 
+                        <li>
+                            <a href="#">Page 1</a>                          
+                        </li>
+                        <li>
+                            <a href="#">Page 2</a>                          
+                        </li>
+                        <li>
+                            <a href="#">Page 3</a>                          
+                        </li>
+                        <li>
+                            <a href="#">Page 4</a>                          
+                        </li>
+                        <li>
+                            <a href="#">Page 5</a>                          
+                        </li>
+                        <li>
+                            <a href="#">Page 6</a>                          
+                        </li>
+                        <li>
+                            <a href="#">Page 7</a>                          
+                        </li>
+                        <li>
+                            <a href="#">Page 8</a>                          
+                        </li> 
                     </ul>
-                </li>
-                
-            </ul>
-            <ul class="ul-parent">ShortCodes
-                <li class="li-none">
+                </div>
+            </li>
+            <li class="li-parent">ShortCodes
+                <div class="div-none">
                     <ul class="ul-child ul-child-shortcode">
-                        <a href="#">
-                            <li>ShortCodes 1</li>
-                            <li>ShortCodes 2</li>
-                            <li>ShortCodes 3</li>
-                            <li>ShortCodes 4</li>
-                            <li>ShortCodes 5</li>
-                            <li>ShortCodes 6</li>
-                            <li>ShortCodes 7</li>
-                            <li>ShortCodes 8</li>
-                        </a> 
+                        <li>
+                            <a href="#">ShortCodes 1</a>                          
+                        </li>
+                        <li>
+                            <a href="#">ShortCodes 2</a>                          
+                        </li>
+                        <li>
+                            <a href="#">ShortCodes 3</a>                          
+                        </li>
+                        <li>
+                            <a href="#">ShortCodes 4</a>                          
+                        </li>
+                        <li>
+                            <a href="#">ShortCodes 5</a>                          
+                        </li>
+                        <li>
+                            <a href="#">ShortCodes 6</a>                          
+                        </li>
+                        <li>
+                            <a href="#">ShortCodes 7</a>                          
+                        </li>
+                        <li>
+                            <a href="#">ShortCodes 8</a>                          
+                        </li> 
                     </ul>
-                </li>
-                
-            </ul>
-            <ul class="ul-parent">Shop
-                <li class="li-none">
+                </div>
+            </li>
+            <li class="li-parent">Features  
+                <div class="div-none">
                     <ul class="ul-child ul-child-travel">
                         <li class="li-travel li-travel-2">
-                            <h4>Column 1</h4>    
-                            <p>Row 1</p>      
-                            <p>Row 1</p>           
-                            <p>Row 1</p>  
-                            <p>Row 1</p>  
-                            <p>Row 1</p>  
-                            <p>Row 1</p>  
-                            <p>Row 1</p>  
-                            <p>Row 1</p>  
-                            <p>Row 1</p>  
-                            <p>Row 1</p>  
-                            <p>Row 1</p>  
+                            <h4>Column 1</h4>
+                            <p>Row 1</p>
+                            <p>Row 1</p>
+                            <p>Row 1</p>
+                            <p>Row 1</p>
+                            <p>Row 1</p>
+                            <p>Row 1</p>
+                            <p>Row 1</p>
+                            <p>Row 1</p>
+                            <p>Row 1</p>
+                            <p>Row 1</p>
+                            <p>Row 1</p> 
+                        </li>  
+                        <li class="li-travel li-travel-2">
+                            <h4>Column 2</h4>
+                            <p>Row 2</p>
+                            <p>Row 2</p>
+                            <p>Row 2</p>
+                            <p>Row 2</p>
+                            <p>Row 2</p>
+                            <p>Row 2</p>
+                            <p>Row 2</p>
+                            <p>Row 2</p>
+                            <p>Row 2</p>
+                            <p>Row 2</p>
+                            <p>Row 2</p> 
                         </li>
                         <li class="li-travel li-travel-2">
-                            <h4>Column 2</h4>    
-                            <p>Row 2</p>      
-                            <p>Row 2</p>           
-                            <p>Row 2</p>  
-                            <p>Row 2</p>  
-                            <p>Row 2</p>  
-                            <p>Row 2</p>  
-                            <p>Row 2</p>  
-                            <p>Row 2</p>  
-                            <p>Row 2</p>  
-                            <p>Row 2</p>  
-                            <p>Row 2</p>  
+                            <h4>Column 3</h4>
+                            <p>Row 3</p>
+                            <p>Row 3</p>
+                            <p>Row 3</p>
+                            <p>Row 3</p>
+                            <p>Row 3</p>
+                            <p>Row 3</p>
+                            <p>Row 3</p>
+                            <p>Row 3</p>
+                            <p>Row 3</p>
+                            <p>Row 3</p>
+                            <p>Row 3</p> 
                         </li>
                         <li class="li-travel li-travel-2">
-                            <h4>Column 3</h4>    
-                            <p>Row 3</p>      
-                            <p>Row 3</p>           
-                            <p>Row 3</p>  
-                            <p>Row 3</p>  
-                            <p>Row 3</p>  
-                            <p>Row 3</p>  
-                            <p>Row 3</p>  
-                            <p>Row 3</p>  
-                            <p>Row 3</p>  
-                            <p>Row 3</p>  
-                            <p>Row 3</p>  
-                        </li>
-                        <li class="li-travel li-travel-2">
-                            <h4>Column 4</h4>    
-                            <p>Row 4</p>      
-                            <p>Row 4</p>           
-                            <p>Row 4</p>  
-                            <p>Row 4</p>  
-                            <p>Row 4</p>  
-                            <p>Row 4</p>  
-                            <p>Row 4</p>  
-                            <p>Row 4</p>  
-                            <p>Row 4</p>  
-                            <p>Row 4</p>  
-                            <p>Row 4</p>  
-                        </li>
+                            <h4>Column 4</h4>
+                            <p>Row 4</p>
+                            <p>Row 4</p>
+                            <p>Row 4</p>
+                            <p>Row 4</p>
+                            <p>Row 4</p>
+                            <p>Row 4</p>
+                            <p>Row 4</p>
+                            <p>Row 4</p>
+                            <p>Row 4</p>
+                            <p>Row 4</p>
+                            <p>Row 4</p> 
+                        </li>                                     
                     </ul>
-                </li> 
-            </ul>
-            <ul>Purchase</ul> 
-
-            <ul>
+                </div>
+            </li>
+            <li>Purchase</li>
+            <li>
                 <i class="fab fa-twitter"></i>
-            </ul>
-            <ul>
+            </li>
+            <li>
                 <i class="fab fa-facebook-f"></i>
-            </ul>
-            <ul>
+            </li>
+            <li>
                 <i class="fas fa-heart"></i>
-            </ul>
-            <ul>
+            </li>
+            <li>
                 <i class="fas fa-camera im-camera"></i>
-            </ul>
-            <ul>
+            </li>
+            <li>
                 <i class="fas fa-video"></i>
-            </ul>
-            <ul>
+            </li>
+            <li>
                 <i class="fas fa-shopping-cart"></i>
-            </ul>
-        </div>
+            </li>
+        </ul>
     </nav>
- <!-- COPY FROM PAGE2.HTML -->
+    <!-- COPY FROM PAGE2.HTML -->
     <main>
         <!-- slide -->
         <section class="slide">
@@ -281,13 +322,14 @@
             </div>
             <div class="slide-content">
                 <a href="#">
-                    <div class="slide-1 slide-item" >
+                    <div class="slide-1 slide-item">
                         <div class="lifestyle-travel">
                             <div class="lifestyle repair">LIFESTYLE</div>
                             <div class="travel repair">TRAVEL</div>
                         </div>
                         <h2>HOW TO SPEND A GREAT SUMMER DAY</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet libero faucibus, finibus justo vitae, ultrices lectus. Quisque pharetra, lacus qui...</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet libero
+                            faucibus, finibus justo vitae, ultrices lectus. Quisque pharetra, lacus qui...</p>
                     </div>
                     <div class="slide-2 slide-item">
                         <div class="lifestyle-travel">
@@ -295,7 +337,8 @@
                             <div class="makeup repair">MAKEUP</div>
                         </div>
                         <h2>TIPS TO GET SOFT PINK LIPS NATURALLY</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet libero faucibus, finibus justo vitae, ultrices lectus. Quisque pharetra, lacus qui...</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet libero
+                            faucibus, finibus justo vitae, ultrices lectus. Quisque pharetra, lacus qui...</p>
                     </div>
                     <div class="slide-3 slide-item">
                         <div class="lifestyle-travel">
@@ -303,7 +346,8 @@
                             <div class="makeup repair">MAKEUP</div>
                         </div>
                         <h2>ESSENTIAL TOOLS FOR YOUR MAKEUP BAG</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet libero faucibus, finibus justo vitae, ultrices lectus. Quisque pharetra, lacus qui...</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet libero
+                            faucibus, finibus justo vitae, ultrices lectus. Quisque pharetra, lacus qui...</p>
                     </div>
                 </a>
             </div>
@@ -313,73 +357,36 @@
         <section class="content-wrap">
             <section class="lastest-articles">
                 <h1>LASTEST ARTICLES</h1>
-                <div class="articles num1">
-                    <div class="left-img">
-                        <img src="./img/pic6.jpg">
-                        <div class="wrap-i">
-                            <div>
-                                <i class="far fa-heart"></i>
+                <div class="wrap-articles">
+                    <div class="articles num1">
+                        <div class="left-img">
+                            <img src="./img/pic6.jpg">
+                            <div class="wrap-i">
+                                <div>
+                                    <i class="far fa-heart"></i>
+                                </div>
+                                <div>
+                                    <i class="fab fa-staylinked"></i>
+                                </div>
                             </div>
-                            <div>
-                                <i class="fab fa-staylinked"></i>
-                            </div>                      
-                        </div>                   
-                    </div>
-                    <div class="right-introduce">
-                        <div class="product product-1" >                        
-                            <div class="function">
-                                <a href="#">
-                                    <div class="how-choose title-1">BEAUTY</div>
-                                </a>
-                                <a href="#">
-                                    <div class="how-choose title-2">MAKEUP</div>
-                                </a>                          
-                            </div>
-                            <a href="#">
-                                <h2>How to Choose Your Fragrance</h2>
-                            </a>
-                            
-                            <p>This is a sticky post. Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Suspendisse sit amet libero faucibus, finibus justo vitae, ultrices lectus. Quisque pharetra, lacus quis venenatis molestie, nibh …</p>
-                            <ul>
-                                <li>Sukie Hammack</li>
-                                <li>April 3, 2017</li>
-                                <li>Leave a comment</li>
-                            </ul>
-                            <a href="#">
-                                <div class="read-more">Read More</div>
-                            </a>
-                            
                         </div>
-                    </div>
-                </div>
+                        <div class="right-introduce">
+                            <div class="product product-1">
+                                <div class="function">
+                                    <a href="#">
+                                        <div class="how-choose title-1">BEAUTY</div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="how-choose title-2">MAKEUP</div>
+                                    </a>
+                                </div>
+                                <a href="#">
+                                    <h2>How to Choose Your Fragrance</h2>
+                                </a>
 
-                <div class="articles num2">
-                    <div class="left-img">
-                        <img src="./img/pic6.jpg">
-                        <div class="wrap-i">
-                            <div>
-                                <i class="far fa-heart"></i>
-                            </div>
-                            <div>
-                                <i class="fab fa-staylinked"></i>
-                            </div>                      
-                        </div>
-                    </div>
-                    <div class="right-introduce">
-                            <div class="product product-1" >                        
-                                <div class="function">
-                                    <a href="#">
-                                        <div class="how-choose title-1">BEAUTY</div>
-                                    </a>
-                                    <a href="#">
-                                        <div class="how-choose title-2">MAKEUP</div>
-                                    </a>                          
-                                </div>
-                                <a href="#">
-                                    <h2>How to Choose Your Fragrance</h2>
-                                </a>
-                                
-                                <p>This is a sticky post. Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Suspendisse sit amet libero faucibus, finibus justo vitae, ultrices lectus. Quisque pharetra, lacus quis venenatis molestie, nibh …</p>
+                                <p>This is a sticky post. Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
+                                    Suspendisse sit amet libero faucibus, finibus justo vitae, ultrices lectus. Quisque
+                                    pharetra, lacus quis venenatis molestie, nibh …</p>
                                 <ul>
                                     <li>Sukie Hammack</li>
                                     <li>April 3, 2017</li>
@@ -388,118 +395,40 @@
                                 <a href="#">
                                     <div class="read-more">Read More</div>
                                 </a>
-                                
-                            </div>
-                    </div>
-                </div>
 
-                <div class="articles num3">
-                    <div class="left-img">
-                        <img src="./img/pic6.jpg">
-                        <div class="wrap-i">
-                            <div>
-                                <i class="far fa-heart"></i>
                             </div>
-                            <div>
-                                <i class="fab fa-staylinked"></i>
-                            </div>                      
                         </div>
                     </div>
-                    <div class="right-introduce">
-                            <div class="product product-1" >                        
-                                <div class="function">
-                                    <a href="#">
-                                        <div class="how-choose title-1">BEAUTY</div>
-                                    </a>
-                                    <a href="#">
-                                        <div class="how-choose title-2">MAKEUP</div>
-                                    </a>                          
-                                </div>
-                                <a href="#">
-                                    <h2>How to Choose Your Fragrance</h2>
-                                </a>
-                                
-                                <p>This is a sticky post. Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Suspendisse sit amet libero faucibus, finibus justo vitae, ultrices lectus. Quisque pharetra, lacus quis venenatis molestie, nibh …</p>
-                                <ul>
-                                    <li>Sukie Hammack</li>
-                                    <li>April 3, 2017</li>
-                                    <li>Leave a comment</li>
-                                </ul>
-                                <a href="#">
-                                    <div class="read-more">Read More</div>
-                                </a>
-                                
-                            </div>
-                    </div>
-                </div>
 
-                <div class="articles num4">
-                    <div class="left-img">
-                        <img src="./img/pic6.jpg">
-                        <div class="wrap-i">
-                            <div>
-                                <i class="far fa-heart"></i>
+                    <div class="articles num2">
+                        <div class="left-img">
+                            <img src="./img/pic6.jpg">
+                            <div class="wrap-i">
+                                <div>
+                                    <i class="far fa-heart"></i>
+                                </div>
+                                <div>
+                                    <i class="fab fa-staylinked"></i>
+                                </div>
                             </div>
-                            <div>
-                                <i class="fab fa-staylinked"></i>
-                            </div>                      
                         </div>
-                    </div>
-                    <div class="right-introduce">
-                            <div class="product product-1" >                        
+                        <div class="right-introduce">
+                            <div class="product product-1">
                                 <div class="function">
                                     <a href="#">
                                         <div class="how-choose title-1">BEAUTY</div>
                                     </a>
                                     <a href="#">
                                         <div class="how-choose title-2">MAKEUP</div>
-                                    </a>                          
+                                    </a>
                                 </div>
                                 <a href="#">
                                     <h2>How to Choose Your Fragrance</h2>
                                 </a>
-                                
-                                <p>This is a sticky post. Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Suspendisse sit amet libero faucibus, finibus justo vitae, ultrices lectus. Quisque pharetra, lacus quis venenatis molestie, nibh …</p>
-                                <ul>
-                                    <li>Sukie Hammack</li>
-                                    <li>April 3, 2017</li>
-                                    <li>Leave a comment</li>
-                                </ul>
-                                <a href="#">
-                                    <div class="read-more">Read More</div>
-                                </a>
-                                
-                            </div>
-                    </div>
-                </div>
 
-                <div class="articles num5">
-                    <div class="left-img">
-                        <img src="./img/pic6.jpg">
-                        <div class="wrap-i">
-                            <div>
-                                <i class="far fa-heart"></i>
-                            </div>
-                            <div>
-                                <i class="fab fa-staylinked"></i>
-                            </div>                      
-                        </div>
-                    </div>
-                    <div class="right-introduce">
-                            <div class="product product-1" >                        
-                                <div class="function">
-                                    <a href="#">
-                                        <div class="how-choose title-1">BEAUTY</div>
-                                    </a>
-                                    <a href="#">
-                                        <div class="how-choose title-2">MAKEUP</div>
-                                    </a>                          
-                                </div>
-                                <a href="#">
-                                    <h2>How to Choose Your Fragrance</h2>
-                                </a>
-                                
-                                <p>This is a sticky post. Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Suspendisse sit amet libero faucibus, finibus justo vitae, ultrices lectus. Quisque pharetra, lacus quis venenatis molestie, nibh …</p>
+                                <p>This is a sticky post. Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
+                                    Suspendisse sit amet libero faucibus, finibus justo vitae, ultrices lectus. Quisque
+                                    pharetra, lacus quis venenatis molestie, nibh …</p>
                                 <ul>
                                     <li>Sukie Hammack</li>
                                     <li>April 3, 2017</li>
@@ -508,37 +437,40 @@
                                 <a href="#">
                                     <div class="read-more">Read More</div>
                                 </a>
-                                
+
                             </div>
-                    </div>
-                </div>
-                <div class="articles num6">
-                    <div class="left-img">
-                        <img src="./img/pic6.jpg">
-                        <div class="wrap-i">
-                            <div>
-                                <i class="far fa-heart"></i>
-                            </div>
-                            <div>
-                                <i class="fab fa-staylinked"></i>
-                            </div>                      
                         </div>
                     </div>
-                    <div class="right-introduce">
-                            <div class="product product-1" >                        
+
+                    <div class="articles num3">
+                        <div class="left-img">
+                            <img src="./img/pic6.jpg">
+                            <div class="wrap-i">
+                                <div>
+                                    <i class="far fa-heart"></i>
+                                </div>
+                                <div>
+                                    <i class="fab fa-staylinked"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right-introduce">
+                            <div class="product product-1">
                                 <div class="function">
                                     <a href="#">
                                         <div class="how-choose title-1">BEAUTY</div>
                                     </a>
                                     <a href="#">
                                         <div class="how-choose title-2">MAKEUP</div>
-                                    </a>                          
+                                    </a>
                                 </div>
                                 <a href="#">
                                     <h2>How to Choose Your Fragrance</h2>
                                 </a>
-                                
-                                <p>This is a sticky post. Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Suspendisse sit amet libero faucibus, finibus justo vitae, ultrices lectus. Quisque pharetra, lacus quis venenatis molestie, nibh …</p>
+
+                                <p>This is a sticky post. Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
+                                    Suspendisse sit amet libero faucibus, finibus justo vitae, ultrices lectus. Quisque
+                                    pharetra, lacus quis venenatis molestie, nibh …</p>
                                 <ul>
                                     <li>Sukie Hammack</li>
                                     <li>April 3, 2017</li>
@@ -547,37 +479,40 @@
                                 <a href="#">
                                     <div class="read-more">Read More</div>
                                 </a>
-                                
+
                             </div>
-                    </div>
-                </div>
-                <div class="articles num7">
-                    <div class="left-img">
-                        <img src="./img/pic6.jpg">
-                        <div class="wrap-i">
-                            <div>
-                                <i class="far fa-heart"></i>
-                            </div>
-                            <div>
-                                <i class="fab fa-staylinked"></i>
-                            </div>                      
                         </div>
                     </div>
-                    <div class="right-introduce">
-                            <div class="product product-1" >                        
+
+                    <div class="articles num4">
+                        <div class="left-img">
+                            <img src="./img/pic6.jpg">
+                            <div class="wrap-i">
+                                <div>
+                                    <i class="far fa-heart"></i>
+                                </div>
+                                <div>
+                                    <i class="fab fa-staylinked"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right-introduce">
+                            <div class="product product-1">
                                 <div class="function">
                                     <a href="#">
                                         <div class="how-choose title-1">BEAUTY</div>
                                     </a>
                                     <a href="#">
                                         <div class="how-choose title-2">MAKEUP</div>
-                                    </a>                          
+                                    </a>
                                 </div>
                                 <a href="#">
                                     <h2>How to Choose Your Fragrance</h2>
                                 </a>
-                                
-                                <p>This is a sticky post. Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Suspendisse sit amet libero faucibus, finibus justo vitae, ultrices lectus. Quisque pharetra, lacus quis venenatis molestie, nibh …</p>
+
+                                <p>This is a sticky post. Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
+                                    Suspendisse sit amet libero faucibus, finibus justo vitae, ultrices lectus. Quisque
+                                    pharetra, lacus quis venenatis molestie, nibh …</p>
                                 <ul>
                                     <li>Sukie Hammack</li>
                                     <li>April 3, 2017</li>
@@ -586,37 +521,40 @@
                                 <a href="#">
                                     <div class="read-more">Read More</div>
                                 </a>
-                                
+
                             </div>
-                    </div>
-                </div>
-                <div class="articles num8">
-                    <div class="left-img">
-                        <img src="./img/pic6.jpg">
-                        <div class="wrap-i">
-                            <div>
-                                <i class="far fa-heart"></i>
-                            </div>
-                            <div>
-                                <i class="fab fa-staylinked"></i>
-                            </div>                      
                         </div>
                     </div>
-                    <div class="right-introduce">
-                            <div class="product product-1" >                        
+
+                    <div class="articles num5">
+                        <div class="left-img">
+                            <img src="./img/pic6.jpg">
+                            <div class="wrap-i">
+                                <div>
+                                    <i class="far fa-heart"></i>
+                                </div>
+                                <div>
+                                    <i class="fab fa-staylinked"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right-introduce">
+                            <div class="product product-1">
                                 <div class="function">
                                     <a href="#">
                                         <div class="how-choose title-1">BEAUTY</div>
                                     </a>
                                     <a href="#">
                                         <div class="how-choose title-2">MAKEUP</div>
-                                    </a>                          
+                                    </a>
                                 </div>
                                 <a href="#">
                                     <h2>How to Choose Your Fragrance</h2>
                                 </a>
-                                
-                                <p>This is a sticky post. Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Suspendisse sit amet libero faucibus, finibus justo vitae, ultrices lectus. Quisque pharetra, lacus quis venenatis molestie, nibh …</p>
+
+                                <p>This is a sticky post. Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
+                                    Suspendisse sit amet libero faucibus, finibus justo vitae, ultrices lectus. Quisque
+                                    pharetra, lacus quis venenatis molestie, nibh …</p>
                                 <ul>
                                     <li>Sukie Hammack</li>
                                     <li>April 3, 2017</li>
@@ -625,37 +563,39 @@
                                 <a href="#">
                                     <div class="read-more">Read More</div>
                                 </a>
-                                
+
                             </div>
-                    </div>
-                </div>
-                <div class="articles num9">
-                    <div class="left-img">
-                        <img src="./img/pic6.jpg">
-                        <div class="wrap-i">
-                            <div>
-                                <i class="far fa-heart"></i>
-                            </div>
-                            <div>
-                                <i class="fab fa-staylinked"></i>
-                            </div>                      
                         </div>
                     </div>
-                    <div class="right-introduce">
-                            <div class="product product-1" >                        
+                    <div class="articles num6">
+                        <div class="left-img">
+                            <img src="./img/pic6.jpg">
+                            <div class="wrap-i">
+                                <div>
+                                    <i class="far fa-heart"></i>
+                                </div>
+                                <div>
+                                    <i class="fab fa-staylinked"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right-introduce">
+                            <div class="product product-1">
                                 <div class="function">
                                     <a href="#">
                                         <div class="how-choose title-1">BEAUTY</div>
                                     </a>
                                     <a href="#">
                                         <div class="how-choose title-2">MAKEUP</div>
-                                    </a>                          
+                                    </a>
                                 </div>
                                 <a href="#">
                                     <h2>How to Choose Your Fragrance</h2>
                                 </a>
-                                
-                                <p>This is a sticky post. Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Suspendisse sit amet libero faucibus, finibus justo vitae, ultrices lectus. Quisque pharetra, lacus quis venenatis molestie, nibh …</p>
+
+                                <p>This is a sticky post. Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
+                                    Suspendisse sit amet libero faucibus, finibus justo vitae, ultrices lectus. Quisque
+                                    pharetra, lacus quis venenatis molestie, nibh …</p>
                                 <ul>
                                     <li>Sukie Hammack</li>
                                     <li>April 3, 2017</li>
@@ -664,37 +604,39 @@
                                 <a href="#">
                                     <div class="read-more">Read More</div>
                                 </a>
-                                
+
                             </div>
-                    </div>
-                </div>
-                <div class="articles num10">
-                    <div class="left-img">
-                        <img src="./img/pic6.jpg">
-                        <div class="wrap-i">
-                            <div>
-                                <i class="far fa-heart"></i>
-                            </div>
-                            <div>
-                                <i class="fab fa-staylinked"></i>
-                            </div>                      
                         </div>
                     </div>
-                    <div class="right-introduce">
-                            <div class="product product-1" >                        
+                    <div class="articles num7">
+                        <div class="left-img">
+                            <img src="./img/pic6.jpg">
+                            <div class="wrap-i">
+                                <div>
+                                    <i class="far fa-heart"></i>
+                                </div>
+                                <div>
+                                    <i class="fab fa-staylinked"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right-introduce">
+                            <div class="product product-1">
                                 <div class="function">
                                     <a href="#">
                                         <div class="how-choose title-1">BEAUTY</div>
                                     </a>
                                     <a href="#">
                                         <div class="how-choose title-2">MAKEUP</div>
-                                    </a>                          
+                                    </a>
                                 </div>
                                 <a href="#">
                                     <h2>How to Choose Your Fragrance</h2>
                                 </a>
-                                
-                                <p>This is a sticky post. Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Suspendisse sit amet libero faucibus, finibus justo vitae, ultrices lectus. Quisque pharetra, lacus quis venenatis molestie, nibh …</p>
+
+                                <p>This is a sticky post. Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
+                                    Suspendisse sit amet libero faucibus, finibus justo vitae, ultrices lectus. Quisque
+                                    pharetra, lacus quis venenatis molestie, nibh …</p>
                                 <ul>
                                     <li>Sukie Hammack</li>
                                     <li>April 3, 2017</li>
@@ -703,12 +645,136 @@
                                 <a href="#">
                                     <div class="read-more">Read More</div>
                                 </a>
-                                
+
                             </div>
+                        </div>
+                    </div>
+                    <div class="articles num8">
+                        <div class="left-img">
+                            <img src="./img/pic6.jpg">
+                            <div class="wrap-i">
+                                <div>
+                                    <i class="far fa-heart"></i>
+                                </div>
+                                <div>
+                                    <i class="fab fa-staylinked"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right-introduce">
+                            <div class="product product-1">
+                                <div class="function">
+                                    <a href="#">
+                                        <div class="how-choose title-1">BEAUTY</div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="how-choose title-2">MAKEUP</div>
+                                    </a>
+                                </div>
+                                <a href="#">
+                                    <h2>How to Choose Your Fragrance</h2>
+                                </a>
+
+                                <p>This is a sticky post. Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
+                                    Suspendisse sit amet libero faucibus, finibus justo vitae, ultrices lectus. Quisque
+                                    pharetra, lacus quis venenatis molestie, nibh …</p>
+                                <ul>
+                                    <li>Sukie Hammack</li>
+                                    <li>April 3, 2017</li>
+                                    <li>Leave a comment</li>
+                                </ul>
+                                <a href="#">
+                                    <div class="read-more">Read More</div>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="articles num9">
+                        <div class="left-img">
+                            <img src="./img/pic6.jpg">
+                            <div class="wrap-i">
+                                <div>
+                                    <i class="far fa-heart"></i>
+                                </div>
+                                <div>
+                                    <i class="fab fa-staylinked"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right-introduce">
+                            <div class="product product-1">
+                                <div class="function">
+                                    <a href="#">
+                                        <div class="how-choose title-1">BEAUTY</div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="how-choose title-2">MAKEUP</div>
+                                    </a>
+                                </div>
+                                <a href="#">
+                                    <h2>How to Choose Your Fragrance</h2>
+                                </a>
+
+                                <p>This is a sticky post. Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
+                                    Suspendisse sit amet libero faucibus, finibus justo vitae, ultrices lectus. Quisque
+                                    pharetra, lacus quis venenatis molestie, nibh …</p>
+                                <ul>
+                                    <li>Sukie Hammack</li>
+                                    <li>April 3, 2017</li>
+                                    <li>Leave a comment</li>
+                                </ul>
+                                <a href="#">
+                                    <div class="read-more">Read More</div>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="articles num10">
+                        <div class="left-img">
+                            <img src="./img/pic6.jpg">
+                            <div class="wrap-i">
+                                <div>
+                                    <i class="far fa-heart"></i>
+                                </div>
+                                <div>
+                                    <i class="fab fa-staylinked"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right-introduce">
+                            <div class="product product-1">
+                                <div class="function">
+                                    <a href="#">
+                                        <div class="how-choose title-1">BEAUTY</div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="how-choose title-2">MAKEUP</div>
+                                    </a>
+                                </div>
+                                <a href="#">
+                                    <h2>How to Choose Your Fragrance</h2>
+                                </a>
+
+                                <p>This is a sticky post. Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
+                                    Suspendisse sit amet libero faucibus, finibus justo vitae, ultrices lectus. Quisque
+                                    pharetra, lacus quis venenatis molestie, nibh …</p>
+                                <ul>
+                                    <li>Sukie Hammack</li>
+                                    <li>April 3, 2017</li>
+                                    <li>Leave a comment</li>
+                                </ul>
+                                <a href="#">
+                                    <div class="read-more">Read More</div>
+                                </a>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
-            
+
             <section class="editor-picks">
                 <h1>EDITORS' PICKS</h1>
                 <div class="editor-pic1">
@@ -719,7 +785,7 @@
                             <div>Interview</div>
                         </div>
                         <p>Exclusive Interview with <br>
-                        Fashion Designer Louis Jones</p>
+                            Fashion Designer Louis Jones</p>
                         <div class="view-follow">
                             <i class="fas fa-heart"></i>41
                             <i class="fas fa-eye"></i>18k
@@ -741,14 +807,14 @@
                         <p>Life & Style Magazine Theme</p>
                         <p>SHOP NOW</p>
                         <div></div>
-                    </div>                              
+                    </div>
                 </div>
                 <h1>NEWSLETTER</h1>
                 <h2>Don’t miss out. Subscribe to our weekly newsletter.</h2>
-                <form action="#" method="POST"> 
+                <form action="#" method="POST">
                     <input class="your-email" type="text" placeholder="YOUR EMAIL">
                     <i class="far fa-envelope"></i>
-                </form> 
+                </form>
                 <div class="read-trending">
                     <p>MOST READ</p>
                     <p>TRENDING</p>
@@ -761,7 +827,7 @@
                         <p>
                             <span>Life, travel</span>
                             <span><i class="far fa-circle"></i></span>
-                            <span>4.3KViews</span>  
+                            <span>4.3KViews</span>
                         </p>
                     </section>
                 </div>
@@ -773,7 +839,7 @@
                         <p>
                             <span>Life, travel</span>
                             <span><i class="far fa-circle"></i></span>
-                            <span>4.3KViews</span>  
+                            <span>4.3KViews</span>
                         </p>
                     </section>
                 </div>
@@ -785,7 +851,7 @@
                         <p>
                             <span>Life, travel</span>
                             <span><i class="far fa-circle"></i></span>
-                            <span>4.3KViews</span>  
+                            <span>4.3KViews</span>
                         </p>
                     </section>
                 </div>
@@ -800,11 +866,11 @@
             <p>DAILY PLANNER</p>
             <h4>WEEKLY NEWSLETTER</h4>
             <h6>DON’T MISS OUT. SUBSCRIBE TO MY WEEKLY NEWSLETTER.</h6>
-            <form action="#" method="POST"> 
+            <form action="#" method="POST">
                 <input class="your-email" type="text" placeholder="YOUR EMAIL">
                 <input class="your-money" type="submit" value="SUBSCRIBE" name="send">
-            </form>      
-        </div> 
+            </form>
+        </div>
 
         <!-- up footer -->
         <section class="up-footer">
@@ -815,11 +881,11 @@
                 </div>
                 <div>
                     <p>LIFE & STYLE MAGAZINE</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
-                    elit. Suspendisse sit amet libero faucibus, finibus
-                    justo vitae, ultrices lectus. Quisque pharetra, 
-                    lacus quis venenatis molestie, nibh tortor aliquam
-                    dui, id venenatis lectus metus id ipsum.
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Suspendisse sit amet libero faucibus, finibus
+                        justo vitae, ultrices lectus. Quisque pharetra,
+                        lacus quis venenatis molestie, nibh tortor aliquam
+                        dui, id venenatis lectus metus id ipsum.
                     </p>
                 </div>
                 <div>
@@ -906,7 +972,7 @@
                             <a class="fas fa-cart-plus"></a>
                         </li>
                     </ul>
-                      
+
                 </div>
                 <div class="up-footer-search">
                     <form action="#" method="POST">
@@ -1003,8 +1069,22 @@
         <!-- close footer -->
     </main>
 
-    <script src="./js/all.js">
-    
+    <script>
+        let count = 0;
+        showMenu = () => {
+            console.log('ok')
+            let navRight = document.getElementById('nav-right');
+            if (!count) {
+                
+            document.getElementById('nav-right').style.display = 'block';
+            count =1;
+            } else {
+                document.getElementById('nav-right').style.display = 'none';
+                count = 0;
+            }
+            
+        }
     </script>
 </body>
+
 </html>

@@ -5,6 +5,9 @@
 @import './subrise.css';
 @import './/footer.css';
 @import './/respon.css';
+@import './responsive.css';
+@import './stylescrollbar.css';
+
 /* main {
     max-width: var(--maxWidth);
     margin: auto;
@@ -846,3 +849,4 @@ section.up-footer {
     right: 30px;
     top: 23px;
 }
+
