@@ -13,6 +13,20 @@ nav {
    padding:0;
 }
 
+.nav-hidden {
+    display: none;
+    position: fixed;
+    top: 30px;
+    right: 100px;
+}
+
+.nav-hidden p {
+    width: 27px;
+    height: 3px;
+    background-color: yellow;
+    margin: 0 0 5px;
+}
+
 nav .nav-left {
     width:33%;
     position: relative;
@@ -38,24 +52,22 @@ nav .nav-right {
     justify-content: center;
 }
 
-nav .nav-right ul,li {
+nav ul,li {
     margin:0;
     padding:0;
     list-style-type: none;
 }
 /* ---------- HOME,PAGE,SHORTCODE ----------- */
-nav .nav-right>ul {
+nav .nav-right>li {
     padding: 26px 6px;
-    /* border: 1px solid red; */
     margin: 0 8px;
     cursor: pointer;
 }
 
-nav .nav-right .ul-parent .li-none ul.ul-child {
+nav .nav-right .li-parent .div-none ul.ul-child {
     display:block;
     position: absolute;
     z-index: 3;
-    /* border:1px solid red; */
     top: 90px;
     left: 480px;
     width: 200px;
@@ -63,41 +75,41 @@ nav .nav-right .ul-parent .li-none ul.ul-child {
     background-color: white;
 } 
 
-nav .nav-right .ul-parent .li-none ul.ul-child a {
+nav .nav-right .li-parent .div-none ul.ul-child li a {
     text-decoration: none;
     color:black;
 }
 
-nav .nav-right .ul-parent .li-none ul.ul-child a li:hover {
+nav .nav-right .li-parent .div-none ul.ul-child li a:hover {
     color:green;
 }
 
-nav .nav-right .ul-parent .li-none ul.ul-child li {
+nav .nav-right .li-parent .div-none ul.ul-child li {
     margin:15px;
     text-indent: 25px;
     cursor: default;
 }
 
-nav .nav-right .ul-parent li.li-none  {
+nav .nav-right .li-parent div.div-none {
     display:none; 
 }
 
-nav .nav-right ul:hover li.li-none {
+nav .nav-right li:hover div.div-none {
     display:block;
 }
 /* ---------Page -------- */
-nav .nav-right .ul-parent .li-none ul.ul-child-page {
+nav .nav-right .li-parent .div-none ul.ul-child-page {
     left: 700px;
 } 
 /* ----------SHORTCODE------ */
-nav .nav-right .ul-parent .li-none ul.ul-child-shortcode {
+nav .nav-right .li-parent .div-none ul.ul-child-shortcode {
     left: 775px;
 } 
 /* ----------END --HOME PAGE SHORTCODE-------- */
 
 /* -------- TRAVEL -------------- */
 
-nav .nav-right .ul-parent .li-none ul.ul-child-travel {
+nav .nav-right .li-parent .div-none ul.ul-child-travel {
     display:flex;
     position: absolute;
     z-index: 4;
