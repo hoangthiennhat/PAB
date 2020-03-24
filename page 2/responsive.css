@@ -1,6 +1,40 @@
 /* responsive 1280px */
 @media (max-width:1280px) {
-    
+    .li-home, .li-pages, .li-shortcodes {
+        position: relative;
+    }
+    .ul-child-home, .ul-child-page, .ul-child-shortcode {
+        top: 85% !important;
+        left: -20% !important;
+    }
+    .up-foot-hover div {
+        width: calc(100% / 4);
+    }
+    .up-footer-search input {
+        margin:0;
+        padding:0;
+    }
+    .up-footer-search input {
+        border:none;
+    }
+    .up-footer-search form {
+        border:1px solid brown;
+    }
+}
+/* reponsive 1215px */
+@media (max-width:1215px) {
+    nav .nav-right>li {
+        margin: 0 2.5px !important;
+    }
+}
+
+@media (max-width:1170px) {
+    .lastest {
+        padding-bottom: 0px !important;
+    }
+    .find-follow-social ul li {
+        margin: 1px !important;
+    }
 }
 
 /* responsive 992px */
@@ -234,7 +268,7 @@
 
     /* ---- CLOSE NAV -------- */
     .slide-item h2 {
-        margin:40px 100px !important;
+        margin:40px 0px !important;
     }
 
     .slide-item p {
@@ -302,7 +336,46 @@
     .up-footer-search input {
         width: 99% !important;
     }
-
+    footer ul {
+        justify-content: space-around;
+        margin:0 !important;
+        padding: 0 !important;
+    }
+    footer ul li {
+        padding: 0;
+        text-align: center !important;
+    }
+    .editor-pic2-wrap div {
+        top: 85% !important;
+        left: 50%  !important;
+        transform: translate(-50%,-50%) !important;
+    }
+    .lastest img {
+        margin-top: 10px !important;
+        width: 70px !important;
+        height: 70px !important;
+    }
+    .up-foot-hover {
+        margin-top: 20px !important;
+    }
+    .lastest {
+        text-align: center;
+        margin: 20px 0;
+    }
+    .lastest img {
+        float:none !important;
+    }
+    .lastest p:nth-child(2) {
+        margin:0 !important;
+        padding:0 !important;
+        font-size: 12px !important;
+    }
+    .lastest p:nth-child(3) {
+        margin:0 !important;
+        padding:0 !important;
+        font-size: 12px !important;
+    }
+        
 
 }
 
@@ -447,9 +520,12 @@
     }
     footer ul {
         justify-content: space-around;
+        margin:0 !important;
+        padding: 0 !important;
     }
     footer ul li {
         padding: 0;
+        text-align: center !important;
     }
     .editor-picture {
         margin: 15px 0 0 0 !important;

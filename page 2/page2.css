@@ -6,7 +6,7 @@
 @import './/footer.css';
 @import './/respon.css';
 @import './responsive.css';
-@import './stylescrollbar.css';
+/* @import './stylescrollbar.css'; */
 
 /* main {
     max-width: var(--maxWidth);
@@ -666,11 +666,11 @@ section.up-footer {
 }
 
 .up-footer .up-footer-1 {
-    margin-right:calc(10%/2);
+    margin-right:calc(10% / 2);
 }
 
 .up-footer .up-footer-3 {
-    margin-left:calc(10%/2);
+    margin-left:calc(10% / 2);
 }
 
 .up-footer-1>p {
